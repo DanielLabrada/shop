@@ -24,15 +24,7 @@ public class CashView extends JDialog {
 	/**
 	 * Launch the application.
 	 */
-//	public static void main(String[] args) {
-//		try {
-//			ShowCashGUI dialog = new ShowCashGUI();
-//			dialog.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
-//			dialog.setVisible(true);
-//		} catch (Exception e) {
-//			e.printStackTrace();
-//		}
-//	}
+
 
 	/**
 	 * Create the dialog.
@@ -58,21 +50,21 @@ public class CashView extends JDialog {
 		contentPanel.add(textFieldCash);
 		textFieldCash.setColumns(10);
 		textFieldCash.setText(shop.getCash().toString());
-//		{
-//			JPanel buttonPane = new JPanel();
-//			buttonPane.setLayout(new FlowLayout(FlowLayout.RIGHT));
-//			getContentPane().add(buttonPane, BorderLayout.SOUTH);
-//			{
-//				JButton okButton = new JButton("OK");
-//				okButton.setActionCommand("OK");
-//				buttonPane.add(okButton);
-//				getRootPane().setDefaultButton(okButton);
-//			}
-//			{
-//				JButton cancelButton = new JButton("Cancel");
-//				cancelButton.setActionCommand("Cancel");
-//				buttonPane.add(cancelButton);
-//			}
-//		}
+		{
+			JPanel buttonPane = new JPanel();
+			buttonPane.setLayout(new FlowLayout(FlowLayout.RIGHT));
+			getContentPane().add(buttonPane, BorderLayout.SOUTH);
+			{
+				JButton okButton = new JButton("OK");
+				okButton.setActionCommand("OK");
+				buttonPane.add(okButton);
+				getRootPane().setDefaultButton(okButton);
+			}
+			{
+				JButton cancelButton = new JButton("Cancel");
+				cancelButton.setActionCommand("Cancel");
+				buttonPane.add(cancelButton);
+			}
+		}
 	}
 }

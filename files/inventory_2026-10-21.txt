@@ -1,0 +1,3 @@
+product:Manzana;stock:10;
+product:Fresa;stock:20;
+Total number of products: 2
